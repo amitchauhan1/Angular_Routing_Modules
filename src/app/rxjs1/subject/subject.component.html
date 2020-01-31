@@ -1,0 +1,12 @@
+<p>subject works!</p>
+
+<button (click)="condition = !condition" [ngClass]="{ 'a': condition, 'b': !condition }">
+    Toggle condition to {{condition ? 'false' : 'true'}}
+</button>
+
+<p *appMyIf="condition">
+    Condition is True
+</p>
+<p *appMyIf="!condition">
+    Condition is False
+</p>

@@ -1,0 +1,143 @@
+{
+  "Employee": [
+    {
+      "name": "Suresh",
+      "email": "suresh@gmail.com",
+      "phone": 7895463210,
+      "salary": 900000.019,
+      "id": 1
+    },
+    {
+      "id": 3,
+      "name": "Abhi",
+      "email": "abhi@gmail.com",
+      "phone": 4521365245,
+      "salary": 1000000
+    },
+    {
+      "name": "Om1",
+      "email": "om@gmail.com",
+      "phone": 7545216320,
+      "salary": 100000000,
+      "id": 4
+    },
+    {
+      "name": "amit",
+      "email": "abc@gmail.com",
+      "phone": "1111111",
+      "salary": 1000000,
+      "id": 5
+    },
+    {
+      "name": "aaa",
+      "email": "aa@gmail.com",
+      "phone": "9293847374",
+      "salary": 1000000,
+      "id": 6
+    },
+    {
+      "name": "qqq",
+      "email": "www",
+      "phone": "www",
+      "salary": 1000000,
+      "id": 7
+    },
+    {
+      "name": "aaa",
+      "email": "aa@aa.com",
+      "phone": "1212323445",
+      "salary": 1000000,
+      "id": 8
+    },
+    {
+      "name": "qq",
+      "email": "qqq",
+      "phone": "ww1",
+      "salary": 1000000,
+      "id": 14
+    },
+    {
+      "name": "aaw",
+      "email": "qq@qw",
+      "phone": "111111",
+      "salary": 1000000,
+      "id": 15
+    },
+    {
+      "name": "new",
+      "email": "new@gmail.com",
+      "phone": "111111111",
+      "salary": 100000000,
+      "id": 16
+    },
+    {
+      "name": "abc",
+      "email": "abc@aaa.com",
+      "phone": "1111111222",
+      "salary": 10000,
+      "id": 17
+    }
+  ],
+  "Trainee": [
+    {
+      "id": 1,
+      "name": "Amit",
+      "email": "amit@gmail.com",
+      "phone": 8469796310,
+      "salary": 1000000.03
+    },
+    {
+      "id": 2,
+      "name": "Sumu",
+      "email": "sumu@gmail.com",
+      "phone": 4521521369,
+      "salary": 1000000
+    },
+    {
+      "id": 3,
+      "name": "Ani",
+      "email": "ani@gmail.com",
+      "phone": 8452365971,
+      "salary": 1000000
+    },
+    {
+      "id": 4,
+      "name": "Som",
+      "email": "som@gmail.com",
+      "phone": 8453201501,
+      "salary": 1000000
+    }
+  ],
+  "Users": [
+    {
+      "id": 1,
+      "username": "amitAC",
+      "password": "abc1234"
+    },
+    {
+      "id": 2,
+      "username": "dhruvit",
+      "password": "drm1234"
+    },
+    {
+      "username": "amitAC1",
+      "password": "abc1234",
+      "id": 3
+    },
+    {
+      "username": "ankit",
+      "password": "abc1234",
+      "id": 4
+    },
+    {
+      "username": "amitAC11",
+      "password": "abc1234",
+      "id": 5
+    },
+    {
+      "username": "amitAC111",
+      "password": "abc1234",
+      "id": 6
+    }
+  ]
+}

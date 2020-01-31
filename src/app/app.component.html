@@ -1,0 +1,21 @@
+
+<div  id="main">
+<style [src]="./app.component.scss"></style>
+<div *ngIf="flag==false">
+<app-header></app-header>
+
+<!-- <app-footer></app-footer> -->
+</div>
+<div (click)="getElementById1()">
+  <breadcrumb #parent>  
+    <ol class="breadcrumb float-sm-right">
+      <ng-template ngFor let-route [ngForOf]="parent.breadcrumbs">
+        <li *ngIf="route.terminal" class="breadcrumb-item">
+          <a href="" [routerLink]="[route.url]">{{ route.displayName }}</a>
+        </li>
+        <li *ngIf="!route.terminal" class="breadcrumb-item active" aria-current="page">{{ route.displayName }}</li>
+      </ng-template>
+    </ol>
+  </breadcrumb>
+  <router-outlet></router-outlet>
+</div>

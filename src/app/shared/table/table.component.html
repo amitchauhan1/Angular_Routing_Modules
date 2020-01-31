@@ -1,0 +1,43 @@
+<style [src]="./table.component.scss"></style>
+<table class="blueTable">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Salary 
+
+                <button (click)="condition = !condition" [ngClass]="{ 'a': condition, 'b': !condition }">
+                     {{condition ? '$' : '₹'}}
+                </button>
+
+            </th>
+            
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tfoot>
+
+        <tr>
+            <td colspan="6">
+                <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a
+                        href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
+            </td>
+        </tr>
+    </tfoot>
+    <tbody *ngFor="let data of data | async">
+        <tr>
+            <td>{{data.id}}</td>
+            <td>{{data.name}}</td>
+            <td>{{data.email}}</td>
+            <td>{{data.phone}}</td>
+            <td *ngIf="!condition"> {{ data.salary | indianINR}}</td>
+            <td *ngIf="condition">{{data.salary | doller | currency}}</td>
+            <td (click)="doEdit(data.id)" class="fa fa-pencil" style="cursor: pointer; font-size:28px;padding: 5%;">
+            </td>
+            <td (click)="doDelete(data.id)" class="fa fa-trash" style="font-size:28px; cursor: pointer;padding: 5%;">
+            </td>
+        </tr>
+    </tbody>
+</table>

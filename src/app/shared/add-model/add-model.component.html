@@ -1,0 +1,42 @@
+<style [src]="./add-model.component.scss"></style>
+<div class="form-style-9">
+    <form [formGroup]="employee" (ngSubmit)="onSubmit()">
+    <ul>
+        <li>
+            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                <div *ngIf="name.errors.required">
+                    Name is required.
+                </div>
+                <div *ngIf="name.errors.minlength">
+                    Name must be at least 4 characters long.
+                </div>
+            </div>
+            <input type="text" formControlName="name" class="field-style field-split align-left" placeholder="name"/>
+
+            <input type="email" formControlName="email" class="field-style field-split align-right" placeholder="email"/>   
+            <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+                    <div *ngIf="email.errors.required">
+                        Email is required.
+                    </div>
+                    <div *ngIf="email.errors.email">
+                        Email Not Propere.
+                    </div>
+                </div>
+        </li>
+        <li>
+                <div *ngIf="phone.invalid && (phone.dirty || phone.touched)" class="alert alert-danger">
+                        <div *ngIf="phone.errors.required">
+                            Phone Number is required.
+                        </div>
+                        <div *ngIf="phone.errors.minlength || phone.errors.maxlength">
+                                Name must 10 characters.
+                        </div>
+                    </div>
+            <input type="text" formControlName="phone" class="field-style field-split" placeholder="phone"/>
+        </li>
+        <li>
+            <button type="submit" class="field-style">Save</button>
+        </li>
+    </ul>
+</form>
+</div>

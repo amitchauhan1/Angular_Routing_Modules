@@ -1,0 +1,28 @@
+{
+    "Trainee":[
+        {
+            "id":1,
+            "name":"Amit",
+            "email": "amit@gmail.com",
+            "phone": 8469796310
+        },
+        {
+            "id":2,
+            "name":"Sumu",
+            "email": "sumu@gmail.com",
+            "phone": 4521521369
+        },
+        {
+            "id":3,
+            "name":"Ani",
+            "email": "ani@gmail.com",
+            "phone": 8452365971
+        },
+        {
+            "id":4,
+            "name":"Som",
+            "email": "som@gmail.com",
+            "phone": 8453201501
+        }
+    ]
+}
